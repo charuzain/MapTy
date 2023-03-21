@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-container{
+  background-color: rgb(40, 38, 38);
+  height:100vh
+}
+
+.right-container{
+  /* background-color: green; */
+  height:100vh
+}
+
+#map{
+  height:100vh
+}
