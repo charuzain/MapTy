@@ -22,3 +22,17 @@
 #map{
   height:100vh
 }
+
+.popup{
+  border-left:3px solid green;
+
+
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+  background-color:rgb(88, 85, 85);
+  color:whitesmoke;
+  width:120px;
+  padding-left: 10px;
+  
+}
