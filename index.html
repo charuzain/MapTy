@@ -6,27 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mapty</title>
     <!-- Leaflet CSS File -->
-  
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-    crossorigin=""/>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="style.css" />
 
-     <!-- Leaflet's Javascript file -->
- <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
- integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
- crossorigin=""></script>
+    <!-- Leaflet's Javascript file -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
     <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="left-container">
-        <h3>Mapty</h3>
+        <h3 class="app-name">Mapty</h3>
+        <form>
+
+          <div class="row">
+            <label for="type">Type</label>
+            <select name="type" id="type">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label for="distance" aria-placeholder="km">Distance</label>
+            <input id="distance" placeholder="km">
+  
+          </div>
+
+      <div class="row">
+        <label for="duration">Duration</label>
+            <input id="duration" placeholder="min">
+          </div>
+            <div class="row">
+            <label for="steps">Cadence</label>
+            <input placeholder="steps/min" id="steps">
+          </div>
+        </form>
       </div>
+
+      <!--MAP  -->
+
       <div class="right-container">
-<!-- <h1>map-right</h1> -->
-      <div id="map"></div>
-    </div>
+        <!-- <h1>map-right</h1> -->
+        <div id="map"></div>
+      </div>
     </div>
   </body>
 </html>
